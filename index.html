@@ -160,12 +160,13 @@
             color: #000;
             opacity: 0.3;
             transition: opacity 0.3s, background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
-            box-shadow: 0 4px 0 transparent;
+            box-shadow: 0 4px 0 #fff;
             text-shadow: 2px 2px 0px transparent;
-            margin-bottom: 4px;
+            margin-bottom: 0;
             display: inline-block;
             vertical-align: top;
             line-height: 1.2;
+            box-sizing: border-box;
         }
         
         .choice.active {
@@ -174,7 +175,7 @@
             box-shadow: 0 4px 0 #000;
             background: #000;
             color: #fff;
-            margin-bottom: 4px;
+            margin-bottom: 0;
         }
         
         .scanline {
@@ -242,6 +243,8 @@
                 color: #fff;
                 border-color: #fff;
                 text-shadow: 2px 2px 0px transparent;
+                box-shadow: 0 4px 0 #000;
+                margin-bottom: 0;
             }
             
             .choice.active {
@@ -249,6 +252,7 @@
                 color: #000;
                 text-shadow: 2px 2px 0px #fff;
                 box-shadow: 0 4px 0 #fff;
+                margin-bottom: 0;
             }
             
             .scanline {
