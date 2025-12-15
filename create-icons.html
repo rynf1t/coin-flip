@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="canvas" width="512" height="512"></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+ctx.fillStyle = '#000';
+ctx.font = 'bold 200px "Press Start 2P"';
+ctx.textAlign = 'center';
+ctx.textBaseline = 'middle';
+ctx.fillText('🪙', 256, 256);
+canvas.toBlob(blob => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'icon-512.png';
+  a.click();
+});
+</script>
+</body>
+</html>
