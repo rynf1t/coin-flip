@@ -204,7 +204,7 @@
     </div>
 
 
-    <script>
+        <script>
         function flip() {
             const button = document.getElementById('flipButton');
             const result = document.getElementById('result');
@@ -227,12 +227,11 @@
                     tailsChoice.classList.add('active');
                 }
                 button.disabled = false;
-        }
+            }, 1000);
         }
         
+        if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/sw.js');
-        }
-            }, 1000);
         }
     </script>
 </body>
