@@ -4,7 +4,7 @@ Randomly generates a coin flip result with retro arcade-style animation and visu
 
 ## Live Demo
 
-[Try it here](https://coin-flip.itsryan.me/)
+[Try it here](https://rynf1t.github.io/coin-flip/)
 
 ## Running Locally
 
