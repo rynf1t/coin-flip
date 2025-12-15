@@ -159,9 +159,13 @@
             border: 2px solid #000;
             color: #000;
             opacity: 0.3;
-            transition: all 0.3s;
+            transition: opacity 0.3s, background 0.3s, color 0.3s, border-color 0.3s, box-shadow 0.3s, text-shadow 0.3s;
             box-shadow: 0 4px 0 transparent;
             text-shadow: none;
+            margin-bottom: 4px;
+            display: inline-block;
+            vertical-align: top;
+            line-height: 1.2;
         }
         
         .choice.active {
@@ -170,7 +174,7 @@
             box-shadow: 0 4px 0 #000;
             background: #000;
             color: #fff;
-            transform: none;
+            margin-bottom: 4px;
         }
         
         .scanline {
