@@ -209,3 +209,32 @@
 
 </body>
 </html>
+
+    <script>
+        function flip() {
+            const button = document.getElementById('flipButton');
+            const result = document.getElementById('result');
+            const headsChoice = document.getElementById('headsChoice');
+            const tailsChoice = document.getElementById('tailsChoice');
+            
+            button.disabled = true;
+            result.classList.add('flashing');
+            result.textContent = '?';
+            headsChoice.classList.remove('active');
+            tailsChoice.classList.remove('active');
+            
+            setTimeout(() => {
+                const outcome = Math.random() < 0.5 ? 'HEADS' : 'TAILS';
+                result.textContent = outcome;
+                result.classList.remove('flashing');
+                if (outcome === 'HEADS') {
+                    headsChoice.classList.add('active');
+                } else {
+                    tailsChoice.classList.add('active');
+                }
+                button.disabled = false;
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
